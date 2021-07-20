@@ -41,6 +41,17 @@ serão gravados, mas será retornado um erro, por exemplo:
     ]
 }
 ```
+Ou
+```
+{
+    "name": "Auditor-contabil"
+    "packages": [
+        {"name": "Pandas", "version": "1.3.0" },  
+        {"name": "pypypypyvixe"}, // NOME INVÁLIDO
+	{"name": "Django", "version": "3.2.5"}
+    ]
+}
+```
 O erro será: Um ou mais pacotes não existe.
 
 ```
@@ -49,17 +60,16 @@ O erro será: Um ou mais pacotes não existe.
 }
 
 ```
-Você pode também listar um projeto específica pelo nome do projeto
+Você também pode listar um projeto específica pelo nome do projeto
 GET https://magpy-pedro.herokuapp.com/api/projects/Auditor-contabil/
 
-Da mesma forma você pode deletar um projeto pelo nome
+Da mesma forma, deletar um projeto pelo nome
 DELETE https://magpy-pedro.herokuapp.com/api/projects/Auditor-contabil/
 
 ## MagPy-Pedro Documentação
-```
 [MagPy-Pedro-swagger](https://magpy-pedro.herokuapp.com/doc-sw/)
 [MagPy-Pedro-redoc](https://magpy-pedro.herokuapp.com/doc-re/)
-```
+
 ## Como funciona os testes
 Clone o repositório para o seu computador, depois disto execute:
 ```
