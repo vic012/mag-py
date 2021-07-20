@@ -69,7 +69,7 @@ class PackageTestCase(APITestCase):
 		response = self.client.post(self.list_url, dados, format='json')
 		self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
-	def test_requisicao_get_lista_projeto(self):
-		"""Teste de requisição GET para listar os projeto"""
+	def test_requisicao_get_lista_todos_projetos(self):
+		"""Teste de requisição GET para listar todos os projeto"""
 		response = self.client.get(self.list_url)
 		self.assertEqual(response.status_code, status.HTTP_200_OK)
