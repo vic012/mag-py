@@ -20,7 +20,7 @@ from rest_framework import routers
 from api import views
 
 router = routers.SimpleRouter()
-router.register(r'projects', views.ProjectViewSet)
+router.register(r'projects', views.ProjectViewSet, basename='Projects')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
