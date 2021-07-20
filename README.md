@@ -1,49 +1,19 @@
-# Teste Técnico Desenvolvedor(a) Python Júnior [REMOTO]
+# MAgPy Pedro
 
-Neste repositório você encontra o enunciado do teste técnico para a vaga de
-_Desenvolvedor(a) Python Júnior [REMOTO]_ da 
-[Instruct](https://instruct.com.br/)! Você provavelmente chegou aqui através da 
-indicação de alguma pessoa da empresa após passar pelas 
-[outras etapas](https://instruct.com.br/trabalhe-com-a-gente/processo-de-selecao/)
-do processo seletivo. Se este não for o seu caso e mesmo assim você implementar
-alguma solução para este exercício ele **não** será avaliado.
+Neste repositório você encontra a descrição de uso da API de versionamento de 
+pacotes usados em projetos Python, ela é últil para orientar o versionamento
+das bibliotecas usadas na criação de um projeto.
 
-> Você _pode_ usar o problema descrito aqui para exercitar suas habilidades de
-> desenvolvimento, mas a sua solução será avaliada por alguém da Instruct
-> **apenas se** você estiver no processo seletivo da vaga de _Desenvolvedor(a) 
-> Python Júnior [REMOTO]_.
+## Caso de uso
 
+Imagine que uma equipe de programadores usa vários módulos na criação de projeto!
+É bem provável que durante o desenvolvimento um ou mais desenvolvedor sinta
+a necessidade de verificar se os pacotes usados são válidos ou não de acordo com
+a API do [PyPI](https://pypi.org/) ou qual a versão ultilizar.
 
-<details> 
-  <summary>Quer se candidatar para uma vaga na Instruct? </summary>
+## Como usar
 
-Siga as instruções no site: https://instruct.com.br/trabalhe-com-a-gente/
-
-Nessa página estão listadas as vagas abertas hoje e todos os detalhes de nosso
-processo seletivo. Se não encontrou uma vaga que pareça adequada confira a
-página novamente em um ou dois meses, pois ela é atualizada com frequência.
-
-</details>
-
-
-
-## O problema
-
-A equipe de desenvolvimento _Bleeding Edge Enthusiasts_ (BEE) se orgulha de 
-usar as tecnologias mais recentes e modernas. Essa regra também se aplica aos
-projetos desenvolvidos em Python pela equipe BEE.
-
-Para garantir que todos seus projetos em Python estão usando as últimas versões
-disponíves dos pacotes, a equipe pensou em criar uma ferramenta batizada de 
-MagPy. A ferramenta recebe um nome de projeto, uma lista de pacotes e devolve a 
-última versão de cada pacote.
-
-Um dos integrantes da BEE apontou que a 
-[API pública do PyPI](https://warehouse.readthedocs.io/api-reference/json.html)
-poderia ser usada para esse fim.
-
-## Solução
-
+Acesse: 
 Você deve desenvolver a MagPy, uma API REST que gerencia uma coleção de 
 projetos. Cada projeto tem um nome e uma lista de pacotes. Cada pacote tem um 
 nome e uma versão.
