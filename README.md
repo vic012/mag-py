@@ -13,34 +13,25 @@ a API do [PyPI](https://pypi.org/) ou qual a versão ultilizar.
 
 ## Como usar
 
-Acesse: 
-Você deve desenvolver a MagPy, uma API REST que gerencia uma coleção de 
-projetos. Cada projeto tem um nome e uma lista de pacotes. Cada pacote tem um 
-nome e uma versão.
+Acesse: [MagPy-Pedro]
 
-O cadastro de um projeto recebe o nome e a lista de pacotes. Cada pacote da 
-lista precisa obrigatoriamente especificar um nome, mas a versão é opcional.
 
-Sua API deve validar o projeto cadastrado: todos os pacotes informados devem
-estar cadastrados no [PyPI](https://pypi.org/). Portanto você deve verificar o
-nome e a versão do pacote.
-
-Quando o pacote vem apenas com o nome, sua API deve assumir que é preciso usar
-a última versão publicada no [PyPI](https://pypi.org/).
-
-Abaixo, alguns exemplos de chamadas que serão feitas nessa API:
+## Como funciona os teste
+Clone o repositório para o seu computador, depois disto execute:
+```
+..> python -m pipenv install
 
 ```
-POST /api/projects
-{
-    "name": "titan"
-    "packages": [
-        {"name": "Django"},
-        {"name": "graphene", "version": "2.0"}
-    ]
-}
+Feito isso, você terá instalados todos os pacotes listados no arquivo Pipfile.lock
+Em seguida, você deve ativar o ambiente virtual e depois fazer as migrações
+do banco de dados com os comandos:
 ```
-O código HTTP de retorno deve ser 201 e o corpo esperado na resposta é:
+..> python -m pipenv shell
+(nomeDoAmbiente)..> python manage.py migrate
+```
+Muito bem, dessa forma o MagPy-Pedro já está inplantado, agora você pode rodar os teste:
+```
+(nomeDoAmbiente)..> python manage.py test
 ```
 {
     "name": "titan"
